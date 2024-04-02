@@ -1,12 +1,17 @@
-// pages/_app.js
-import '../styles/globals.css'; // Importiere globale Styles, falls vorhanden
-import Layout from '../components/Layout'; // Importiere Layout, falls verwendet
+import Head from 'next/head';
+import '../styles/globals.css';
+import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Head>
+      <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 }
 
