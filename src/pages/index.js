@@ -16,7 +16,7 @@ export default function Index() {
         {/* Hier kommt das Burgermenü-Icon hin */}
       </nav>
       <main className={styles.mainContent}>
-        <h1 className={styles.title}>Hi, I'm Merle, a UX Designer with a decade of experience in customer service and e-commerce.</h1>
+        <h1 className={styles.title}>Hi, Im Merle, a UX Designer with a decade of experience in customer service and e-commerce.</h1>
         <Image
           src="/images/merlewagemann.webp"
           alt="Merle Wagemann"
@@ -26,9 +26,9 @@ export default function Index() {
           className={styles.profileImage}
         />
         <p className={styles.description}>
-          Through roles from Store Manager to Customer Service Ambassador, I've gained insights into product life cycles and building enduring customer relationships. My background in customer support and warehouse logistics has deepened my understanding of consumer needs and behaviors.
+          Through roles from Store Manager to Customer Service Ambassador, Ive gained insights into product life cycles and building enduring customer relationships. My background in customer support and warehouse logistics has deepened my understanding of consumer needs and behaviors.
         </p>
-        <button className={styles.contactButton}>Let’s talk</button>
+        <button className={styles.contactButton}>Lets talk</button>
       </main>
     </div>
   );
