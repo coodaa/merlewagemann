@@ -1,0 +1,46 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav {
+  /* Dein Style für die Navigation */
+}
+
+.mainContent {
+  text-align: center; /* Zentriere den Inhalt */
+}
+
+.title {
+  font-size: 2rem; /* Große Überschrift */
+  margin-top: 2rem;
+}
+
+.profileImage {
+  margin-top: 2rem; /* Füge etwas Platz um das Bild herum hinzu */
+  border-radius: 50%; /* Kreisförmiges Bild */
+}
+
+.description {
+  font-size: 1rem; /* Größe des Absatzes */
+  margin-top: 1rem;
+  line-height: 1.6; /* Verbessere die Lesbarkeit des Textes */
+}
+
+.contactButton {
+  background-color: #7c4dff; /* Farbe des Kontaktbuttons */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem; /* Abgerundete Ecken */
+  margin-top: 2rem;
+  cursor: pointer; /* Hand-Cursor beim Hover */
+  font-size: 1rem;
+}
+
+.contactButton:hover {
+  background-color: #6a3fe0; /* Dunklere Farbe beim Hover */
+}
+
+/* Weitere Styles und Media Queries hier hinzufügen */
