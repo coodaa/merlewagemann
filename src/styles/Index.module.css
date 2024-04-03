@@ -2,15 +2,19 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
+  margin-top: 5em
 }
 
-.nav {
-  /* Dein Style für die Navigation */
-}
 
 .title {
   font-size: 2rem; /* Große Überschrift */
   margin-top: 2rem;
+}
+
+.textContent {
+  order: 1;
+  flex: 1;
+  text-align: left;
 }
 
 .profileImage {
@@ -49,24 +53,25 @@
 /* Anpassung für größere Bildschirme */
 @media (min-width: 768px) {
   .mainContent {
-    flex-direction: row; /* Zeilenanordnung für Desktop */
-    justify-content: center; /* Zentriert die Kinder horizontal */
-    align-items: flex-start; /* Ausrichtung am oberen Rand */
-    text-align: left; /* Links ausgerichteter Text */
-  }
-
-  .title, .description, .contactButton {
-    max-width: 50%; /* Beschränkt die Breite des Textes auf die Hälfte des Containers */
-  }
-
-  .profileImageWrapper {
-    flex: 1; /* Erlaubt dem Bild, den verfügbaren Platz zu nutzen */
-    display: flex;
-    justify-content: center; /* Zentriert das Bild im verbleibenden Platz */
-    margin-right: 2rem; /* Fügt einen rechten Abstand hinzu */
+    flex-direction: row;
+    justify-content: center; /* Zentriert die Elemente horizontal */
+    align-items: flex-start; /* Stellt sicher, dass die Elemente am oberen Rand ausgerichtet sind */
   }
 
   .textContent {
-    flex: 1; /* Erlaubt dem Text, den verbleibenden Platz zu nutzen */
+
+    margin-right: 20px; /* Fügt einen Abstand zum Bild hinzu */
+
+    max-width: 50%; /* Optional: Begrenzt die Breite des Textblocks */
+  }
+
+  .profileImageWrapper {
+    order: 2;
+    flex: 1; /* Gibt dem Bildcontainer Flexibilität, sich auszudehnen */
+    margin-left: 20px; /* Hält den Abstand zum Text */
+    /* Stellt sicher, dass das Bild zentriert in seinem Flex-Container ist */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
