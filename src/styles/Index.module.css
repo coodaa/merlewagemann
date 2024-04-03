@@ -2,9 +2,52 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-  margin-top: 5em
+  margin-top: 5em;
+  height: 100vh;
 }
 
+.mainContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.svgContainer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Stellt sicher, dass SVGs über dem Bild liegen */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.svgLeft,
+.svgRight {
+  position: relative; /* Erlaubt feinere Positionierung */
+}
+
+.profileImageWrapper {
+  position: relative;
+  justify-content: flex-end;
+  width: 65%;
+  margin-left: auto;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.profileImage {
+  object-fit: cover; /* Stellt sicher, dass das Bild den Container vollständig bedeckt, ohne das Seitenverhältnis zu ändern */
+  width: 100%; /* Das Bild füllt den Container aus */
+  height: auto; /* Passt die Höhe automatisch an, um das Seitenverhältnis beizubehalten */
+  margin-top: 2rem; /* Füge etwas Platz um das Bild herum hinzu */
+}
 
 .title {
   font-size: 2rem; /* Große Überschrift */
@@ -15,10 +58,6 @@
   order: 1;
   flex: 1;
   text-align: left;
-}
-
-.profileImage {
-  margin-top: 2rem; /* Füge etwas Platz um das Bild herum hinzu */
 }
 
 .description {
@@ -59,7 +98,6 @@
   }
 
   .textContent {
-
     margin-right: 20px; /* Fügt einen Abstand zum Bild hinzu */
 
     max-width: 50%; /* Optional: Begrenzt die Breite des Textblocks */

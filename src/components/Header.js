@@ -30,17 +30,32 @@ const Header = () => {
         <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`}>
           <ul>
             <li onClick={handleLinkClick}>
-              <Link to="projects" smooth={true} duration={500} onClick={handleClose}>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                onClick={handleClose}
+              >
                 Projects
               </Link>
             </li>
             <li onClick={handleLinkClick}>
-              <Link to="about" smooth={true} duration={500} onClick={handleClose}>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                onClick={handleClose}
+              >
                 About Me
               </Link>
             </li>
             <li onClick={handleLinkClick}>
-              <Link to="resume" smooth={true} duration={500} onClick={handleClose}>
+              <Link
+                to="resume"
+                smooth={true}
+                duration={500}
+                onClick={handleClose}
+              >
                 Resume
               </Link>
             </li>

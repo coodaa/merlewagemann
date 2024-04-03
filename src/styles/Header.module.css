@@ -7,7 +7,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #FFF;
+  background-color: #fff;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -50,7 +50,6 @@
   margin-right: 0.2em;
 }
 
-
 .nav {
   display: none;
 }
@@ -81,18 +80,19 @@
   margin: 1rem;
 }
 
-
 .nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
 }
 
 .nav ul li a:hover {
   color: #a6a3a3; /* Ändert die Farbe */
-  text-shadow: 0px 0px 8px rgba(255,255,255,0.8); /* Fügt einen leichten Schatten hinzu */
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); /* Fügt einen leichten Schatten hinzu */
   text-decoration: underline; /* Fügt eine Unterstreichung hinzu */
 }
 
@@ -101,7 +101,8 @@
     display: none; /* Versteckt das Burger-Icon in der Desktop-Ansicht */
   }
 
-  .nav, .nav.show {
+  .nav,
+  .nav.show {
     all: unset;
     display: flex; /* Zeigt das Menü in einer flexbox Zeile an */
     position: static;
