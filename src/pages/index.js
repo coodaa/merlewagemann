@@ -13,7 +13,6 @@ export default function Index() {
         imageUrl="https://www.merlewagemann.de/path/to/your/portfolio-image.png"
       />
       <nav className={styles.nav}>
-        {/* Hier kommt das Burgermenü-Icon hin */}
       </nav>
       <main className={styles.mainContent}>
         <h1 className={styles.title}>Hi, Im Merle, a UX Designer with a decade of experience in customer service and e-commerce.</h1>
