@@ -17,10 +17,10 @@ export default function Index() {
       <main className={styles.mainContent}>
         <div className={styles.svgContainer}>
           <Parallax speed={-15}>
-            <SVG1 className={styles.svgLeft} />
+            <SVG1 className={styles.svg1} />
           </Parallax>
           <Parallax speed={15}>
-            <SVG2 className={styles.svgRight} />
+            <SVG2 className={styles.svg2} />
           </Parallax>
         </div>
 

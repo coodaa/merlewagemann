@@ -1,7 +1,8 @@
 import React from "react";
 
-const SVG2 = () => (
+const SVG2 = ({ className }) => (
   <svg
+    className={className}
     width="160"
     height="80"
     viewBox="0 0 160 80"

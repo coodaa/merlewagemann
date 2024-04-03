@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem;
-  margin-top: 5em;
+  margin-top: 6em;
   height: 100vh;
 }
 
@@ -16,42 +16,45 @@
 
 .svgContainer {
   position: absolute;
-  top: 0;
+  top: -.2em;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2; /* Stellt sicher, dass SVGs über dem Bild liegen */
-  width: 100%;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
 }
 
-.svgLeft,
-.svgRight {
-  position: relative; /* Erlaubt feinere Positionierung */
+.svg1 {
+  margin-left: 4em;
+  height: 67%;
+}
+
+.svg2 {
+  height: 73%;
 }
 
 .profileImageWrapper {
   position: relative;
   justify-content: flex-end;
-  width: 65%;
+  width: 70%;
   margin-left: auto;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .profileImage {
-  object-fit: cover; /* Stellt sicher, dass das Bild den Container vollständig bedeckt, ohne das Seitenverhältnis zu ändern */
-  width: 100%; /* Das Bild füllt den Container aus */
-  height: auto; /* Passt die Höhe automatisch an, um das Seitenverhältnis beizubehalten */
-  margin-top: 2rem; /* Füge etwas Platz um das Bild herum hinzu */
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
 }
 
+
 .title {
-  font-size: 2rem; /* Große Überschrift */
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 .textContent {
@@ -67,7 +70,9 @@
 }
 
 .contactButton {
-  background-color: #7c4dff; /* Farbe des Kontaktbuttons */
+  background-color: (var)--primary-color;
+
+
   color: white;
   border: none;
   padding: 1rem 2rem;

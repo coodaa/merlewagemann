@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #5a4bff;
+  --primary-color: #6755AA;
   --secondary-color: #4ffff3;
   --tertiary-color: #ffb4ca;
   --quaternary-color: #ffcabf;
@@ -24,5 +24,3 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-
-/* Wende Montserrat global an */
