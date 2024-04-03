@@ -42,7 +42,10 @@ const SEOHead = ({ title, description, url, imageUrl }) => {
       <meta property="og:url" content={url || "https://www.merlewagemann.de"} />
       <meta
         property="og:image"
-        content={imageUrl || "https://www.merlewagemann.de/path/to/your/portfolio-image.png"}
+        content={
+          imageUrl ||
+          "https://www.merlewagemann.de/path/to/your/portfolio-image.png"
+        }
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -62,7 +65,10 @@ const SEOHead = ({ title, description, url, imageUrl }) => {
       />
       <meta
         property="twitter:image"
-        content={imageUrl || "https://www.merlewagemann.de/path/to/your/portfolio-image.png"}
+        content={
+          imageUrl ||
+          "https://www.merlewagemann.de/path/to/your/portfolio-image.png"
+        }
       />
       <meta property="twitter:image:width" content="1200" />
       <meta property="twitter:image:height" content="630" />

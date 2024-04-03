@@ -5,9 +5,26 @@
   padding: 1rem 2rem;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+.menuWrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s linear;
 }
 
 .nav {
@@ -15,45 +32,67 @@
 }
 
 .nav.show {
-  display: block;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0);
+  z-index: 10;
 }
 
 .nav ul {
   list-style: none;
+  text-align: center;
   padding: 0;
   margin: 0;
-  display: flex;
-  gap: 2rem;
+}
+
+.nav ul li {
+  margin: 1rem;
 }
 
 .nav ul li a {
   text-decoration: none;
-  color: #333;
-}
-
-.burger {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  cursor: pointer;
-}
-
-.burger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #333;
+  color: white;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .burger {
-    display: none;
+    display: none; /* Versteckt das Burger-Icon in der Desktop-Ansicht */
   }
 
-  .nav {
-    display: block;
+  .nav, .nav.show {
+    all: unset;
+    display: flex; /* Zeigt das Menü in einer flexbox Zeile an */
+    position: static;
+    transform: none;
+    background: none;
+    flex-direction: row;
+    justify-content: center; /* Zentriert die Navigationselemente */
+    align-items: center;
+    height: auto;
+    width: auto;
   }
 
+  .nav ul {
+    flex-direction: row; /* Stellt die Links nebeneinander */
+    justify-content: center; /* Zentriert die Links im Menü */
+    align-items: center;
+    gap: 2rem; /* Definiert einen Abstand zwischen den Links */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Wichtig, um Flexbox-Eigenschaften anzuwenden */
+  }
 
-
+  .nav ul li a {
+    color: #333; /* Farbanpassung für Links in der Desktop-Ansicht */
+    text-decoration: none;
+  }
 }
