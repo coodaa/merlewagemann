@@ -1,9 +1,13 @@
 .container {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 1rem;
   margin-top: 6em;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .mainContent {
@@ -21,9 +25,6 @@
   transform: translateX(-50%);
   z-index: 2;
   display: flex;
-}
-
-.svg1 {
 }
 
 .svg2 {
@@ -72,19 +73,20 @@
 }
 
 .contactButton {
+  margin-top: 1em;
+  margin-bottom: 1em;
   display: flex;
-  align-items: center; /* Zentriert den Text und das Bild vertikal */
-  justify-content: center; /* Zentriert den Inhalt horizontal */
-  gap: 10px; /* Fügt einen Abstand zwischen Text und Bild hinzu */
-  background-color: #7c4dff;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   padding: 1rem 2rem;
   border-radius: 2rem;
   cursor: pointer;
-  font-size: 1rem;
   text-decoration: none;
-  width: 40%;
+  font-size: 1.8em;
 }
 
 .arrowInsideButton {
@@ -105,27 +107,116 @@
   text-align: center; /* Zentriert den Text */
 }
 
-/* Anpassung für größere Bildschirme */
+
+/* Weiter unten im CSS nach deinen vorhandenen Stilen */
+.additionalSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.additionalTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.additionalText {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+
+
+
+
+
 @media (min-width: 768px) {
+
+  .container {
+    margin-top: 10em;
+  }
+
   .mainContent {
     flex-direction: row;
-    justify-content: center; /* Zentriert die Elemente horizontal */
-    align-items: flex-start; /* Stellt sicher, dass die Elemente am oberen Rand ausgerichtet sind */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+
+  .svg1 {
+    height: auto;
+    width: 129%;
+    margin-top: -2em;
+    margin-left: 2em;
+  }
+
+  .svg2 {
+    height: auto;
+    width: 100%;
+    margin-left: 12em
+  }
+
+  .svg3 {
+    height: auto;
+    width: 81%;
+    margin-left: 19em;
+    margin-top: -3em;
   }
 
   .textContent {
-    margin-right: 20px; /* Fügt einen Abstand zum Bild hinzu */
+    margin-right: 20px;
+    /* Erhöhe die maximale Breite des Textinhalts, um mehr Raum für den Text zu schaffen */
+    max-width: 60%;
+  }
 
-    max-width: 50%; /* Optional: Begrenzt die Breite des Textblocks */
+  .title {
+    /* Erhöhe die Schriftgröße für den Titel */
+    font-size: 2.5rem;
+    margin-top: 4rem; /* Vergrößere den Abstand nach oben */
+  }
+
+  .description {
+    /* Vergrößere die Schriftgröße für die Beschreibung */
+    font-size: 1.25rem;
+    margin-top: 2rem; /* Vergrößere den Abstand nach oben */
+    /* Erhöhe den Zeilenabstand für verbesserte Lesbarkeit */
+    line-height: 2;
   }
 
   .profileImageWrapper {
     order: 2;
-    flex: 1; /* Gibt dem Bildcontainer Flexibilität, sich auszudehnen */
-    margin-left: 20px; /* Hält den Abstand zum Text */
-    /* Stellt sicher, dass das Bild zentriert in seinem Flex-Container ist */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1;
+    /* Anpassung des Abstands zum Text */
+    margin-left: 30px;
+  }
+
+  .profileImage {
+    /* Anpassen der Größe des Bildes, wenn nötig */
+    width: auto;
+    height: 100%; /* Stelle sicher, dass das Bild vollständig sichtbar ist */
+  }
+
+  .contactButton {
+    font-size: 2rem; /* Vergrößere die Schriftgröße des Buttons */
+    padding: 1.5rem 0rem; /* Vergrößere die Polsterung für einen größeren Button */
+    border-radius: 3rem; /* Vergrößere den Radius für weichere Ränder */
+    /* Optional: Anpassen der Breite des Buttons, um ihn visuell ansprechender zu machen */
+    width: 50%;
+    margin-top: 4em; /* Vergrößere den Abstand zum Hauptinhalt */
+  }
+
+  .arrowInsideButton {
+
+    width: 24px;
+    height: 24px;
   }
 }

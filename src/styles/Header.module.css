@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-between; /* Oder 'flex-start', falls das Menü direkt neben dem Logo sein soll */
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;

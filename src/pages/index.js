@@ -16,6 +16,7 @@ export default function Index() {
         url="https://www.merlewagemann.de"
         imageUrl="https://www.merlewagemann.de/path/to/your/portfolio-image.png"
       />
+
       <main className={styles.mainContent}>
         <div className={styles.svgContainer}>
           <Parallax speed={-18}>
@@ -51,18 +52,24 @@ export default function Index() {
             and warehouse logistics has deepened my understanding of consumer
             needs and behaviors.
           </p>
-          <a href="mailto:hi@merlewagemann.de" className={styles.contactButton}>
-            Let&apos;s talk
-            <Image
-              src="/images/arrow.png"
-              alt="Arrow"
-              width={500}
-              height={300}
-              className={styles.arrowInsideButton}
-            />
-          </a>
         </div>
       </main>
+
+      <a href="mailto:hi@merlewagemann.de" className={styles.contactButton}>
+        Let&apos;s talk
+        <Image
+          src="/images/arrow.png"
+          alt="Arrow"
+          width={20}
+          height={20}
+          className={styles.arrowInsideButton}
+        />
+      </a>
+
+      <section className={styles.additionalSection}>
+        <h2 className={styles.additionalTitle}>LATEST UX PROJECTS</h2>
+        <p className={styles.additionalText}>Vocabulary Learning App </p>
+      </section>
     </div>
   );
 }
