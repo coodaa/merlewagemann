@@ -21,7 +21,6 @@
   transform: translateX(-50%);
   z-index: 2;
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .svg1 {
@@ -73,15 +72,26 @@
 }
 
 .contactButton {
-  background-color: var(--primary-color);
+  display: flex;
+  align-items: center; /* Zentriert den Text und das Bild vertikal */
+  justify-content: center; /* Zentriert den Inhalt horizontal */
+  gap: 10px; /* Fügt einen Abstand zwischen Text und Bild hinzu */
+  background-color: #7c4dff;
   color: white;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 2rem; /* Abgerundete Ecken */
-  margin-top: 2rem;
-  cursor: pointer; /* Hand-Cursor beim Hover */
+  border-radius: 2rem;
+  cursor: pointer;
   font-size: 1rem;
+  text-decoration: none;
+  width: 40%;
 }
+
+.arrowInsideButton {
+  width: 20px; /* Oder eine andere spezifische Größe */
+  height: auto; /* Erhält das Seitenverhältnis */
+}
+
 
 .contactButton:hover {
   background-color: #6a3fe0; /* Dunklere Farbe beim Hover */

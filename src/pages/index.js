@@ -6,6 +6,7 @@ import SVG1 from "../components/svg/SVG1";
 import SVG2 from "../components/svg/SVG2";
 import SVG3 from "../components/svg/SVG3";
 import styles from "../styles/Index.module.css";
+
 export default function Index() {
   return (
     <div className={styles.container}>
@@ -50,7 +51,16 @@ export default function Index() {
             and warehouse logistics has deepened my understanding of consumer
             needs and behaviors.
           </p>
-          <button className={styles.contactButton}>Let&apos;s talk</button>
+          <a href="mailto:hi@merlewagemann.de" className={styles.contactButton}>
+            Let&apos;s talk
+            <Image
+              src="/images/arrow.png"
+              alt="Arrow"
+              width={500}
+              height={300}
+              className={styles.arrowInsideButton}
+            />
+          </a>
         </div>
       </main>
     </div>
