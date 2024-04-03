@@ -14,6 +14,11 @@ export default function Index() {
       />
       <nav className={styles.nav}></nav>
       <main className={styles.mainContent}>
+
+      <div id="projects"> {/* Inhalt des Projects-Abschnitts */} </div>
+<div id="about"> {/* Inhalt des About Me-Abschnitts */} </div>
+<div id="resume"> {/* Inhalt des Resume-Abschnitts */} </div>
+
         <h1 className={styles.title}>
           Hi, Im Merle, a UX Designer with a decade of experience in customer
           service and e-commerce.

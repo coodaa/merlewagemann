@@ -1,21 +1,34 @@
 import React, { useState } from "react";
 import styles from "../styles/Header.module.css";
-import Logo from "./Logo"; // Stelle sicher, dass der Pfad korrekt ist
+import Logo from "./Logo";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={() => scroll.scrollToTop()}>
         <Logo />
       </div>
       <div className={styles.menuWrapper}>
         <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`}>
           <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#resume">Resume</a></li>
+            <li>
+              <Link to="projects" smooth={true} duration={500}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="about" smooth={true} duration={500}>
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link to="resume" smooth={true} duration={500}>
+                Resume
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
