@@ -3,16 +3,100 @@ import React from "react";
 const SVG2 = ({ className }) => (
   <svg
     className={className}
-    width="160"
-    height="80"
-    viewBox="0 0 160 80"
+    width="129"
+    height="220"
+    viewBox="0 0 129 220"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M1.90117 55.7542C25.6939 44.0116 57.6194 59.3813 80.9507 65.7161C98.8386 70.5729 117.018 74.9819 135.247 78.3938C140.385 79.3555 147.642 78.716 138.217 74.9211C116.229 66.0682 92.9231 60.3701 70.6091 52.3537C59.8429 48.4859 56.4133 47.0024 45.7017 43.3701C39.4331 41.2444 21.4163 41.1808 26.7896 37.3153C29.7811 35.1634 34.1659 37.2466 37.8436 37.4799C55.9653 38.6298 73.9459 41.116 91.9049 43.7168C109.75 46.3011 138.396 45.6467 154.742 54.7216C172.797 64.7447 115.258 42.5868 95.7016 35.9551C79.2008 30.3597 93.9433 35.1557 98.8458 29.8537C104.868 23.3405 96.6505 20.4095 108.719 19.7623C117.196 19.3077 91.5414 16.8867 84.3396 12.3913C83.4574 11.8406 86.4157 12.1204 87.4531 12.1928C89.1137 12.3086 84.6352 10.3615 83.065 9.80881C59.5077 1.51744 78.4804 2.30432 92.0003 4.596C99.8497 5.92651 103.568 7.0055 97.8137 1.19161"
-      stroke="#D9D536"
-      strokeWidth="2.13064"
+      d="M105.884 109.729C106.6 114.023 117.727 120.193 115.88 112.804"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M102.039 81.2784C102.205 77.9704 103.415 77.6388 106.14 76.3232C109.181 74.8552 109.183 68.8117 109.729 65.9"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M77.4338 45.1393C77.4338 43.0843 77.903 40.7603 75.896 39.7568"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M67.438 11.3068C69.5814 8.4489 76.1252 12.9262 77.4339 9"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M55.904 56.673C55.904 61.6967 49.8242 63.5218 46.677 66.6689"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M48.2148 102.039V112.035"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M62.8243 132.796C62.8243 138.29 62.7347 143.509 62.0554 148.943"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M71.2825 85.892V102.039"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M21.3027 84.3541C14.7285 84.6828 10.4222 93.275 9 98.9636"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M19.7649 123.569V139.716"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M34.3743 171.242V178.162"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M92.636 172.144V189.931"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M120 196.772V211.822"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M72.1129 196.772C64.2494 196.772 63.2268 194.727 58.4309 189.931"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
+      strokeLinecap="round"
+    />
+    <path
+      d="M99.4768 142.044H111.791"
+      stroke="#EEC2C5"
+      strokeWidth="16.3325"
       strokeLinecap="round"
     />
   </svg>

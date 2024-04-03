@@ -4,6 +4,7 @@ import { Parallax } from "react-scroll-parallax";
 import SEOHead from "../components/SEOHead";
 import SVG1 from "../components/svg/SVG1";
 import SVG2 from "../components/svg/SVG2";
+import SVG3 from "../components/svg/SVG3";
 import styles from "../styles/Index.module.css";
 export default function Index() {
   return (
@@ -16,11 +17,14 @@ export default function Index() {
       />
       <main className={styles.mainContent}>
         <div className={styles.svgContainer}>
-          <Parallax speed={-15}>
+          <Parallax speed={-18}>
             <SVG1 className={styles.svg1} />
           </Parallax>
-          <Parallax speed={15}>
+          <Parallax speed={-8}>
             <SVG2 className={styles.svg2} />
+          </Parallax>
+          <Parallax speed={10}>
+            <SVG3 className={styles.svg3} />
           </Parallax>
         </div>
 

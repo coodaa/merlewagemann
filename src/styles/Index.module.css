@@ -21,16 +21,19 @@
   transform: translateX(-50%);
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .svg1 {
-  margin-left: 4em;
-  height: 67%;
 }
 
 .svg2 {
   height: 73%;
+}
+
+.svg3 {
+  margin-top: 1.7em;
+  height: 29%;
 }
 
 .profileImageWrapper {
