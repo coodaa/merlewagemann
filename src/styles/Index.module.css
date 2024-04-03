@@ -8,10 +8,6 @@
   /* Dein Style für die Navigation */
 }
 
-.mainContent {
-  text-align: center; /* Zentriere den Inhalt */
-}
-
 .title {
   font-size: 2rem; /* Große Überschrift */
   margin-top: 2rem;
@@ -42,4 +38,35 @@
   background-color: #6a3fe0; /* Dunklere Farbe beim Hover */
 }
 
-/* Weitere Styles und Media Queries hier hinzufügen */
+/* Grundlegender Flexbox-Container für mobile Ansicht */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Zentriert die Kinder vertikal */
+  text-align: center; /* Zentriert den Text */
+}
+
+/* Anpassung für größere Bildschirme */
+@media (min-width: 768px) {
+  .mainContent {
+    flex-direction: row; /* Zeilenanordnung für Desktop */
+    justify-content: center; /* Zentriert die Kinder horizontal */
+    align-items: flex-start; /* Ausrichtung am oberen Rand */
+    text-align: left; /* Links ausgerichteter Text */
+  }
+
+  .title, .description, .contactButton {
+    max-width: 50%; /* Beschränkt die Breite des Textes auf die Hälfte des Containers */
+  }
+
+  .profileImageWrapper {
+    flex: 1; /* Erlaubt dem Bild, den verfügbaren Platz zu nutzen */
+    display: flex;
+    justify-content: center; /* Zentriert das Bild im verbleibenden Platz */
+    margin-right: 2rem; /* Fügt einen rechten Abstand hinzu */
+  }
+
+  .textContent {
+    flex: 1; /* Erlaubt dem Text, den verbleibenden Platz zu nutzen */
+  }
+}
