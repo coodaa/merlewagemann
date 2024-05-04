@@ -1,0 +1,24 @@
+.additionalSection {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.additionalTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.additionalText {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 80%;
+  line-height: 1.5;
+}

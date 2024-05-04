@@ -5,6 +5,8 @@ import SEOHead from "../components/SEOHead";
 import SVG1 from "../components/svg/SVG1";
 import SVG2 from "../components/svg/SVG2";
 import SVG3 from "../components/svg/SVG3";
+import LatestProjects from "../components/LatestProjects";
+
 import styles from "../styles/Index.module.css";
 
 export default function Index() {
@@ -16,7 +18,6 @@ export default function Index() {
         url="https://www.merlewagemann.de"
         imageUrl="https://www.merlewagemann.de/path/to/your/portfolio-image.png"
       />
-
       <main className={styles.mainContent}>
         <div className={styles.svgContainer}>
           <Parallax speed={-18}>
@@ -54,7 +55,6 @@ export default function Index() {
           </p>
         </div>
       </main>
-
       <a href="mailto:hi@merlewagemann.de" className={styles.contactButton}>
         Let&apos;s talk
         <Image
@@ -65,11 +65,7 @@ export default function Index() {
           className={styles.arrowInsideButton}
         />
       </a>
-
-      <section className={styles.additionalSection}>
-        <h2 className={styles.additionalTitle}>LATEST UX PROJECTS</h2>
-        <p className={styles.additionalText}>Vocabulary Learning App </p>
-      </section>
+      <LatestProjects />
     </div>
   );
 }

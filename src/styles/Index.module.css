@@ -108,37 +108,6 @@
 }
 
 
-/* Weiter unten im CSS nach deinen vorhandenen Stilen */
-.additionalSection {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-}
-
-.additionalTitle {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.additionalText {
-  font-size: 1.25rem;
-  color: #666;
-  max-width: 80%;
-  line-height: 1.5;
-}
-
-
-
-
-
-
 @media (min-width: 768px) {
 
   .container {
@@ -154,7 +123,7 @@
 
   .svg1 {
     height: auto;
-    width: 129%;
+    width: 100%;
     margin-top: -2em;
     margin-left: 2em;
   }
@@ -162,7 +131,7 @@
   .svg2 {
     height: auto;
     width: 100%;
-    margin-left: 12em
+    margin-left: 16.5em
   }
 
   .svg3 {
