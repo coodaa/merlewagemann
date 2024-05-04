@@ -1,24 +1,49 @@
-.additionalSection {
+.container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   padding: 2rem;
 }
 
-.additionalTitle {
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-left: 10%;
+}
+
+.title {
   font-size: 2rem;
   color: #333;
   margin-bottom: 1rem;
+  margin-left: 10%;
 }
 
-.additionalText {
+.description {
   font-size: 1.25rem;
-  color: #666;
   max-width: 80%;
   line-height: 1.5;
+  margin-left: 10%;
+
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
