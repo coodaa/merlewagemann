@@ -4,22 +4,27 @@
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
-  padding: 4rem;
+  padding: 1em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
 }
 
 .project {
   width: 100%;
   margin-bottom: 2rem;
-}
+  border-top: 2px solid;
 
-.projectLink {
-  text-decoration: none;
-  color: inherit;
-  text-decoration: none;
-  outline: none;
 }
 
 .hoverImage {
@@ -30,12 +35,25 @@
   transform: scale(1.01);
 }
 
-
 @media (min-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
     gap: 20px;
+    padding: 4em;
+  }
+
+  .project:first-child, .project:last-child {
+    grid-row: 1 / span 3; /* Erstreckt sich über alle drei Zeilen */
+    margin-top: 16em;
+
+  }
+
+  .project:nth-child(2) {
+    grid-row: 2; /* Nur in der mittleren Zeile */
+    align-self: center; /* Zentriert das Projekt vertikal */
+
   }
 }
 

@@ -30,23 +30,28 @@ function LatestProjects() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.header}>LATEST PROJECTS</h1>
-      {projects.map((project) => (
-        <Link key={project.id} href={project.link} passHref>
-          <div className={styles.project}>
-            <h2 className={styles.title}>{project.title}</h2>
-            <p className={styles.description}>{project.description}</p>
-            <Image
-              src={project.imageUrl}
-              alt={project.title}
-              layout="responsive"
-              width={500}
-              height={300}
-              objectFit="cover"
-              className={styles.hoverImage}
-            />
-          </div>
-        </Link>
+      <div className={styles.header}>
+        <span>LATEST</span>
+        <span>PROJECTS</span>
+      </div>
+      {projects.map((project, index) => (
+        <div key={project.id} className={styles.project}>
+          <h2 className={styles.title}>{project.title}</h2>
+          <p className={styles.description}>{project.description}</p>
+          <Link href={project.link}>
+            <div className={styles.imageWrapper}>
+              <Image
+                src={project.imageUrl}
+                alt={project.title}
+                layout="responsive"
+                width={500}
+                height={300}
+                objectFit="cover"
+                className={styles.hoverImage}
+              />
+            </div>
+          </Link>
+        </div>
       ))}
     </div>
   );
