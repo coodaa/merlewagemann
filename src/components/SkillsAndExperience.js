@@ -1,14 +1,11 @@
 import React from "react";
 import styles from "../styles/SkillsAndExperience.module.css";
+import SvgIcon from "./SvgIcon";
 
 function SkillsAndExperience() {
   const skills = [
-    { id: 1, name: "Figma", icon: "/path/to/figma-icon.svg" },
-    { id: 2, name: "Wireframing", icon: "/path/to/wireframe-icon.svg" },
-    { id: 3, name: "Canva", icon: "/path/to/canva-icon.svg" },
-    { id: 4, name: "Prototyping", icon: "/path/to/prototype-icon.svg" },
-    { id: 5, name: "Trello", icon: "/path/to/trello-icon.svg" },
-    { id: 6, name: "Miro", icon: "/path/to/miro-icon.svg" },
+    { id: 1, name: "Figma", icon: "figma" },
+    // { id: 2, name: "Figma", icon: "figma" },
   ];
 
   return (
@@ -29,11 +26,8 @@ function SkillsAndExperience() {
         <div className={styles.skillsGrid}>
           {skills.map((skill) => (
             <div key={skill.id} className={styles.skillItem}>
-              <img
-                src={skill.icon}
-                alt={skill.name}
-                className={styles.skillIcon}
-              />
+              <SvgIcon name={skill.icon} />
+
               <a>{skill.name}</a>
             </div>
           ))}
