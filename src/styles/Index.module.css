@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 1rem;
   margin-top: 6em;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,9 +67,9 @@
 }
 
 .description {
-  font-size: 1rem; /* Größe des Absatzes */
+  font-size: 1rem;
   margin-top: 1rem;
-  line-height: 1.6; /* Verbessere die Lesbarkeit des Textes */
+  line-height: 1.6; 
 }
 
 .contactButton {
