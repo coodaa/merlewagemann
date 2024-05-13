@@ -1,6 +1,6 @@
 // pages/imprint.js
 import React from "react";
-import styles from "../styles/legal.module.css";
+import styles from "../styles/Legal.module.css";
 import SEOHead from "../components/SEOHead";
 
 const legal = () => {
