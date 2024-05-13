@@ -5,7 +5,40 @@ import SvgIcon from "./SvgIcon";
 function SkillsAndExperience() {
   const skills = [
     { id: 1, name: "Figma", icon: "figma" },
-    // { id: 2, name: "Figma", icon: "figma" },
+    { id: 2, name: "Wireframing", icon: "wireframing" },
+    { id: 3, name: "Canva", icon: "canva" },
+    { id: 4, name: "Prototyping", icon: "prototyping" },
+    { id: 5, name: "Trello", icon: "trello" },
+    { id: 6, name: "Miro", icon: "miro" },
+    { id: 7, name: "Shopify", icon: "shopify" },
+  ];
+
+  const experiences = [
+    {
+      period: "Aug 2023 – Present",
+      title: "Professionel Development & UX Certificate",
+      company: "Career Foundry",
+    },
+    {
+      period: "Oct 2023 – Present",
+      title: "Co-Founder of Berlin Candy (Freeze Dried Candys)",
+      company: "Berlin Candy",
+    },
+    {
+      period: "2020 – 2023",
+      title: "Store Manager Fashion Retail",
+      company: "Monkind Berlin",
+    },
+    {
+      period: "2012 – 2021",
+      title: "Sales Advisor & Customer Service Ambassador",
+      company: "COS Berlin",
+    },
+    {
+      period: "Jun 2012 – Sept 2012",
+      title: "Intern Project Management",
+      company: "White Horse Music (Jung von Matt)",
+    },
   ];
 
   return (
@@ -27,13 +60,30 @@ function SkillsAndExperience() {
           {skills.map((skill) => (
             <div key={skill.id} className={styles.skillItem}>
               <SvgIcon name={skill.icon} />
-
               <a>{skill.name}</a>
             </div>
           ))}
         </div>
       </div>
-      <h2>Experience</h2>
+      <div className={styles.experienceSection}>
+        <h2>Experience</h2>
+        <div className={styles.experience}>
+          {experiences.map((exp, index) => (
+            <React.Fragment key={index}>
+              <div className={styles.experienceItem}>
+                <div className={styles.period}>{exp.period}</div>
+                <div>
+                  <div className={styles.title}>{exp.title}</div>
+                  <div className={styles.company}>{exp.company}</div>
+                </div>
+              </div>
+              {index < experiences.length - 1 && (
+                <hr className={styles.divider} />
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

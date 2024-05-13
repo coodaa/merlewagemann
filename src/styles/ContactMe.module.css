@@ -1,0 +1,35 @@
+.contactMeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: transparent;
+}
+
+.contactMeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26em;
+  height: 15em;
+  background-color: #e8b4b8;
+  border-radius: 50%;
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .contactMeContainer {
+    height: 60vh;
+  }
+
+  .contactMeButton {
+    width: 14em;
+    height: 9em;
+    font-size: 1.5rem; /* Anpassung der Schriftgröße für Mobilgeräte */
+  }
+}

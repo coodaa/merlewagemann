@@ -1,13 +1,27 @@
+/* src/styles/Footer.module.css */
 .footer {
-  background-color: #f8f9fa;
-  color: #6c757d;
   text-align: center;
-  padding: .7rem 0;
-  border-top: 1px solid #e9ecef;
+  padding: 1rem 0;
+  border-top: 2px solid black;
 }
 
 .container {
   max-width: 1140px;
   margin: auto;
   padding: 0 15px;
+}
+
+.links {
+  margin-top: 0.5rem;
+  font-size: 1.5em;
+}
+
+.link {
+  margin: 0 10px;
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }

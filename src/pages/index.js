@@ -7,6 +7,7 @@ import SVG2 from "../components/svg/SVG2";
 import SVG3 from "../components/svg/SVG3";
 import LatestProjects from "../components/LatestProjects";
 import SkillsAndExperience from "../components/SkillsAndExperience";
+import ContactMe from "../components/ContactMe";
 
 import styles from "../styles/Index.module.css";
 
@@ -68,6 +69,7 @@ export default function Index() {
       </a>
       <LatestProjects />
       <SkillsAndExperience />
+      <ContactMe />
     </div>
   );
 }
