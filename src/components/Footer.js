@@ -1,5 +1,5 @@
-// src/components/Footer.js
 import React from "react";
+import Link from "next/link";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
@@ -7,9 +7,9 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.links}>
-          <a href="/legal-notice" className={styles.link}>
+          <Link href="/legal-notice" className={styles.link}>
             Impressum
-          </a>
+          </Link>
           <a
             href="https://www.linkedin.com/in/merlewagemann"
             className={styles.link}
