@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.links}>
-          <a href="/imprint" className={styles.link}>
+          <a href="/legal-notice" className={styles.link}>
             Impressum
           </a>
           <a

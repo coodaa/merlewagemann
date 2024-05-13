@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styles from "../styles/Header.module.css";
 import Logo from "./Logo";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,10 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.logo} onClick={() => scroll.scrollToTop()}>
-        <Logo />
+      <div className={styles.logo}>
+        <Link href="/">
+          <Logo />
+        </Link>
       </div>
       <div className={styles.menuWrapper}>
         {isOpen && (
@@ -30,34 +33,27 @@ const Header = () => {
         <nav className={`${styles.nav} ${isOpen ? styles.show : ""}`}>
           <ul>
             <li onClick={handleLinkClick}>
-              <Link
+              <ScrollLink
                 to="projects"
                 smooth={true}
                 duration={500}
                 onClick={handleClose}
               >
                 Projects
-              </Link>
+              </ScrollLink>
             </li>
             <li onClick={handleLinkClick}>
-              <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                onClick={handleClose}
-              >
-                About Me
-              </Link>
+              <Link href="/about-me">About Me</Link>
             </li>
             <li onClick={handleLinkClick}>
-              <Link
+              <ScrollLink
                 to="resume"
                 smooth={true}
                 duration={500}
                 onClick={handleClose}
               >
                 Resume
-              </Link>
+              </ScrollLink>
             </li>
           </ul>
         </nav>
