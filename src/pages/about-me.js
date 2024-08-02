@@ -46,7 +46,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={styles.dislikesSection}>
-          <h2>What I don't like</h2>
+          <h2>What I dont like</h2>
           <div className={styles.imageCard}>
             <Image
               src="/images/dont-like-ladybug.jpg"
